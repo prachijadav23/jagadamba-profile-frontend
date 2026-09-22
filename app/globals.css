@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-height: 72px;
+  --topbar-height: 36px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  background-color: #f8fafc;
+  color: #0c2340;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* User requirement: All paragraph and descriptive text justified */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-manrope), Manrope, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background-color: #0c2340;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #133e87;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Technical engineering grid background for industrial sections */
+.bg-technical-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-technical-grid-light {
+  background-image:
+    linear-gradient(to right, rgba(12, 35, 64, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(12, 35, 64, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Corporate steel scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0c2340;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #133e87;
+}
