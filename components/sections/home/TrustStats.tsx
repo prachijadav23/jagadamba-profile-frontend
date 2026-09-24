@@ -32,7 +32,7 @@ export function TrustStats() {
       <Container className="relative z-10">
         {/* Steel Makes Ticker (Professional, Discrete) */}
         <div className="mb-10 border-b border-white/10 pb-6 overflow-hidden">
-          <p className="text-center font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-[#FBBF24] mb-4">
+          <p className="text-center font-sans text-[11px] font-bold uppercase tracking-[0.2em] text-red-400 mb-4">
             Primary Steel Makes Stocked &amp; Processed
           </p>
           <div className="relative flex overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,white_15%,white_85%,transparent)]">
@@ -50,8 +50,8 @@ export function TrustStats() {
             >
               {[...steelBrands, ...steelBrands].map((brand, i) => (
                 <span key={i} className="flex items-center gap-5">
-                  <span className="hover:text-[#FBBF24] transition-colors">{brand}</span>
-                  <span className="text-[#F59E0B] font-bold">&bull;</span>
+                  <span className="hover:text-red-400 transition-colors">{brand}</span>
+                  <span className="text-[#e52229] font-bold">&bull;</span>
                 </span>
               ))}
             </motion.div>
@@ -66,9 +66,9 @@ export function TrustStats() {
               variants={staggerItem}
               whileHover={{ y: -3 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="relative overflow-hidden rounded-card border border-white/10 bg-white/[0.03] p-5 sm:p-6 backdrop-blur-sm transition-colors hover:border-[#F59E0B]/50 hover:bg-white/[0.06]"
+              className="relative overflow-hidden rounded-card border border-white/10 bg-white/[0.03] p-5 sm:p-6 backdrop-blur-sm transition-colors hover:border-[#e52229]/50 hover:bg-white/[0.06]"
             >
-              <div className="absolute top-0 left-0 h-0.5 w-12 bg-[#F59E0B]" />
+              <div className="absolute top-0 left-0 h-0.5 w-12 bg-[#e52229]" />
               <div className="font-display text-stat-mobile font-extrabold tabular-nums text-white sm:text-stat tracking-tight">
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
@@ -86,7 +86,7 @@ export function TrustStats() {
               key={cap}
               className="flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-[#F59E0B]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#e52229]" />
               <span>{cap}</span>
             </span>
           ))}

@@ -4,20 +4,20 @@ import { Container } from "@/components/ui/Container";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: "Multimedia Gallery & Plant Tour",
   description:
-    "Factory, steel plate yard, CNC and laser cutting, cranes and handling, finished components and dispatch — a visual look at the Jagdamba Profile facility.",
+    "Explore our 75,000 sq.ft. facility, 300 mm CNC cutting, 2,500 MT ready stockyard, and 20-ton crane handling through official marketing videos and high-resolution photography.",
 };
 
 export default function GalleryPage() {
   return (
     <>
       <PageHero
-        eyebrow="Gallery"
-        title="Inside the Facility"
-        subtitle="Factory shed, plate yard, cutting machines, crane handling and finished components — filter by category or open any image."
+        eyebrow="Multimedia Gallery"
+        title="Facility Tour, Marketing Videos & Photography"
+        subtitle="Experience our 75,000 sq.ft. facility, 300 mm CNC cutting operations, multi-grade plate yard, and pan-India dispatch through official video reels and high-resolution plant imagery."
       />
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-20 bg-white min-h-[60vh]">
         <Container>
           <GalleryGrid />
         </Container>

@@ -29,7 +29,7 @@ export const galleryItems: GalleryItem[] = [
   { id: "g6", title: "CNC Drilling Setup", category: "CNC & Laser", imageCategory: "cnc-drilling" },
   { id: "g7", title: "20 Ton EOT Crane", category: "Cranes & Handling", imageCategory: "crane-handling" },
   { id: "g8", title: "Hydra Loading", category: "Cranes & Handling", imageCategory: "hydra" },
-  { id: "g9", title: "Forklift Movement", category: "Cranes & Handling", imageCategory: "forklift" },
+  { id: "g9", title: "Yard Handling & Loading", category: "Cranes & Handling", imageCategory: "hydra" },
   { id: "g10", title: "Rings & Flanges", category: "Finished Components", imageCategory: "components" },
   { id: "g11", title: "Profile-Cut Machine Parts", category: "Finished Components", imageCategory: "components" },
   { id: "g12", title: "Circles & Base Plates", category: "Finished Components", imageCategory: "components" },

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone, MessageCircle, ArrowUpRight } from "lucide-react";
 import { company } from "@/data/company";
@@ -6,57 +7,53 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-navy-950 pt-16 border-t-2 border-[#F59E0B] text-white">
+    <footer className="relative overflow-hidden bg-navy-950 pt-16 border-t-2 border-[#e52229] text-white">
       <div className="pointer-events-none absolute inset-0 bg-technical-grid opacity-20" />
 
       <Container className="relative z-10">
         <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-12 sm:grid-cols-2 lg:grid-cols-6">
           {/* Brand & Contact Column */}
           <div className="lg:col-span-2">
-            <div className="flex flex-col leading-none">
-              <div className="flex items-center gap-1.5">
-                <span className="font-display text-xl font-black tracking-tight text-white">
-                  JAGDAMBA
-                </span>
-                <span className="font-display text-xl font-black tracking-tight text-[#F59E0B]">
-                  PROFILE
-                </span>
-              </div>
-              <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#FDE68A]">
-                Pvt. Ltd. &middot; Vadodara, Gujarat
-              </span>
-            </div>
+            <Link href="/" className="inline-block bg-white rounded-lg p-2.5 shadow-sm max-w-[210px] mb-3">
+              <Image
+                src="/images/logo-tight.png"
+                alt="Jagdamba Profile Pvt. Ltd."
+                width={190}
+                height={56}
+                className="h-9 w-auto object-contain"
+              />
+            </Link>
 
-            <p className="mt-4 max-w-sm text-xs sm:text-sm leading-relaxed text-slate-300 text-justify">
+            <p className="mt-2 max-w-sm text-xs sm:text-sm leading-relaxed text-slate-300 text-justify">
               {company.description}
             </p>
 
             <div className="mt-5 flex flex-col gap-2.5 text-xs sm:text-sm text-slate-300">
               <a
                 href={`tel:+91${company.phones.office[0]}`}
-                className="flex items-center gap-2 hover:text-[#FBBF24] transition-colors"
+                className="flex items-center gap-2 hover:text-red-400 transition-colors"
               >
-                <Phone size={14} className="shrink-0 text-[#F59E0B]" />
+                <Phone size={14} className="shrink-0 text-[#e52229]" />
                 <span>+91 {company.phones.office[0]} / {company.phones.office[1]}</span>
               </a>
               <a
                 href={`mailto:${company.email}`}
-                className="flex items-center gap-2 hover:text-[#FBBF24] transition-colors"
+                className="flex items-center gap-2 hover:text-red-400 transition-colors"
               >
-                <Mail size={14} className="shrink-0 text-[#F59E0B]" />
+                <Mail size={14} className="shrink-0 text-[#e52229]" />
                 <span>{company.email}</span>
               </a>
               <a
                 href={`https://wa.me/${company.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#FBBF24] transition-colors"
+                className="flex items-center gap-2 hover:text-red-400 transition-colors"
               >
-                <MessageCircle size={14} className="shrink-0 text-[#F59E0B]" />
+                <MessageCircle size={14} className="shrink-0 text-[#e52229]" />
                 <span>WhatsApp: {company.whatsappDisplay}</span>
               </a>
               <span className="flex items-start gap-2 text-slate-300">
-                <MapPin size={14} className="mt-0.5 shrink-0 text-[#F59E0B]" />
+                <MapPin size={14} className="mt-0.5 shrink-0 text-[#e52229]" />
                 <span>{company.address.full}</span>
               </span>
             </div>
@@ -65,7 +62,7 @@ export function Footer() {
           {/* Navigation Columns */}
           {footerColumns.map((col) => (
             <div key={col.title}>
-              <h4 className="font-display text-xs font-bold uppercase tracking-[0.14em] text-[#FBBF24] mb-4">
+              <h4 className="font-display text-xs font-bold uppercase tracking-[0.14em] text-red-400 mb-4">
                 {col.title}
               </h4>
               <ul className="flex flex-col gap-2.5">
@@ -73,7 +70,7 @@ export function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-xs sm:text-sm text-slate-400 transition-colors hover:text-[#FBBF24]"
+                      className="text-xs sm:text-sm text-slate-400 transition-colors hover:text-red-400"
                     >
                       {link.label}
                     </Link>
@@ -91,8 +88,8 @@ export function Footer() {
         </div>
       </Container>
 
-      {/* Photo 1 Signature Vibrant Golden Amber Bottom Strip */}
-      <div className="bg-[#F59E0B] text-[#0A1D33] py-3.5 px-4 font-sans text-xs font-bold border-t border-[#D97706]">
+      {/* Signature Palace Crimson Red Bottom Strip */}
+      <div className="bg-[#e52229] text-white py-3 px-4 font-sans text-xs font-bold border-t border-[#c81920]">
         <Container>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 text-center sm:text-left">
             <div className="flex items-center gap-4 flex-wrap justify-center">

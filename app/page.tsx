@@ -1,31 +1,34 @@
-import { Hero } from "@/components/sections/home/Hero";
-import { TrustStats } from "@/components/sections/home/TrustStats";
-import { VideoReelSection } from "@/components/sections/home/VideoReelSection";
-import { AboutSection } from "@/components/sections/home/AboutSection";
-import { WhyChooseUs } from "@/components/sections/home/WhyChooseUs";
-import { ProductsShowcase } from "@/components/sections/home/ProductsShowcase";
-import { SteelWeightCalculator } from "@/components/sections/home/SteelWeightCalculator";
-import { InfrastructureSection } from "@/components/sections/home/InfrastructureSection";
-import { IndustriesSection } from "@/components/sections/home/IndustriesSection";
-import { QualitySection } from "@/components/sections/home/QualitySection";
-import { ApplicationsSection } from "@/components/sections/home/ApplicationsSection";
-import { CTASection } from "@/components/sections/home/CTASection";
+import { IndustrialHero } from "@/components/sections/home/IndustrialHero";
+import { TickerSection } from "@/components/sections/home/TickerSection";
+import { IndustrialOverview } from "@/components/sections/home/IndustrialOverview";
+import { ThreeFeatureColumns } from "@/components/sections/home/ThreeFeatureColumns";
+import { IndustrialCompetence } from "@/components/sections/home/IndustrialCompetence";
+import { ProcessingDivisions } from "@/components/sections/home/ProcessingDivisions";
+import { IndustrialCTA } from "@/components/sections/home/IndustrialCTA";
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <TrustStats />
-      <VideoReelSection />
-      <AboutSection />
-      <WhyChooseUs />
-      <ProductsShowcase />
-      <SteelWeightCalculator />
-      <InfrastructureSection />
-      <IndustriesSection />
-      <QualitySection />
-      <ApplicationsSection />
-      <CTASection />
+      {/* 1. AeroLogix Industrial Hero: Dual-Color Headline + Call Anytime Widget */}
+      <IndustrialHero />
+
+      {/* 2. Marquee Ticker: Certified Steel Mills & Capabilities */}
+      <TickerSection />
+
+      {/* 3. Section 1 (AeroLogix): Dual-Color Overview + Asymmetric Double-Image + 22+ Years Badge */}
+      <IndustrialOverview />
+
+      {/* 4. Section 1 Sub-Row: 3 Feature Columns with Outline Orange Icons */}
+      <ThreeFeatureColumns />
+
+      {/* 5. Section 2 (AeroLogix): Plant Visual + Industry-Proven Competence Checklist */}
+      <IndustrialCompetence />
+
+      {/* 6. Section 3 (AeroLogix): 4 Specialized Processing Divisions with Dark Petrol Navy Caption Bars */}
+      <ProcessingDivisions />
+
+      {/* 7. AeroLogix Industrial Inquiry & Drawing Quote CTA Banner */}
+      <IndustrialCTA />
     </>
   );
 }

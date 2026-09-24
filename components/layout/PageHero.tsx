@@ -13,15 +13,15 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#06121E] via-[#0A1D33] to-[#0C2340] pb-16 pt-[calc(var(--nav-height)+56px)] sm:pt-[calc(var(--nav-height)+76px)] text-white border-b border-[#133E87]/40">
-      <div className="pointer-events-none absolute inset-0 bg-technical-grid opacity-25" />
-      <div className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#133E87]/20 blur-3xl" />
-      <div className="pointer-events-none absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#38BDF8]/60 to-transparent" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#0A222D] via-[#0F303F] to-[#0A222D] pb-16 pt-[calc(var(--nav-height)+56px)] sm:pt-[calc(var(--nav-height)+76px)] text-white border-b border-[#143B4E]">
+      <div className="pointer-events-none absolute inset-0 bg-technical-grid opacity-20" />
+      <div className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#FF5E3A]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#FF5E3A]/40 to-transparent" />
 
       <Container className="relative z-10">
         <Reveal>
-          <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-[#7DD3FC]">
-            <span className="h-0.5 w-8 bg-[#38BDF8]/80" />
+          <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-[#FF5E3A]">
+            <span className="h-0.5 w-8 bg-[#FF5E3A]" />
             <span>{eyebrow}</span>
           </div>
         </Reveal>
@@ -40,3 +40,4 @@ export function PageHero({
     </section>
   );
 }
+

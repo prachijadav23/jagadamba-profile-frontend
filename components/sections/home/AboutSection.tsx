@@ -1,132 +1,107 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Users, ShieldCheck, ArrowRight, Award, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { Reveal } from "@/components/ui/Reveal";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-import { Button } from "@/components/ui/Button";
 import { company } from "@/data/company";
-import { CheckCircle2, ShieldCheck, Award } from "lucide-react";
-
-const coreCapabilities = [
-  "Prime Steel Plate Stock (3 mm – 300 mm)",
-  "High-Definition CNC Profile Cutting",
-  "Precision Fiber Laser Cutting Bay",
-  "CNC Multi-Spindle Radial Drilling",
-  "Level-II Ultrasonic Testing (UT)",
-  "Thickness Verification & Spectro Testing",
-  "100% Heat Traceability & MTC Records",
-  "In-House 20T Cranes & Transport Fleet",
-];
 
 export function AboutSection() {
   return (
     <section className="py-16 sm:py-24 bg-white relative">
       <Container>
-        {/* Section Heading Centered matching Screenshot 2 */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <Reveal>
-            <div className="text-xs sm:text-[13px] font-bold uppercase tracking-[0.18em] text-[#D97706] mb-3">
-              WHAT WE DELIVER
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Left Column: High-Resolution Facility Photography with Floating 22+ Years Card */}
+          <div className="lg:col-span-6 relative">
+            <div className="relative aspect-[4/5] sm:aspect-[4/4.5] w-full max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+              <Image
+                src="/images/factory.jpg"
+                alt="Jagdamba Profile 75,000 Sq. Ft. Facility"
+                fill
+                sizes="(max-width: 768px) 100vw, 500px"
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
-          </Reveal>
-          <Reveal delay={0.06}>
-            <h2 className="font-display text-2xl sm:text-4xl font-extrabold tracking-tight text-[#0C2340]">
-              Jagdamba Profile Pvt. Ltd. &mdash; complete steel solutions under one roof
-            </h2>
-          </Reveal>
-          <Reveal delay={0.12}>
-            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700 text-justify">
-              {company.description}
-            </p>
-          </Reveal>
-        </div>
 
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Left Column: Capabilities List */}
-          <div className="lg:col-span-6">
-            <Reveal delay={0.14}>
-              <h3 className="font-display text-xl font-bold text-[#0C2340] mb-4">
-                Core Capabilities &amp; Processing Services
-              </h3>
-              <ul className="grid grid-cols-1 gap-x-6 gap-y-3.5 sm:grid-cols-2">
-                {coreCapabilities.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm font-semibold text-slate-700">
-                    <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#F59E0B]" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-
-            {/* Quality Philosophy Strip */}
-            <Reveal delay={0.18}>
-              <div className="mt-8 flex flex-wrap items-center gap-2">
-                {company.philosophy.map((step, i) => (
-                  <span key={step} className="flex items-center gap-2">
-                    <span className="rounded bg-slate-100 px-3 py-1 text-xs font-bold text-[#0C2340] border border-slate-200">
-                      {step}
-                    </span>
-                    {i < company.philosophy.length - 1 && (
-                      <span className="text-slate-300 font-bold">&bull;</span>
-                    )}
-                  </span>
-                ))}
+            {/* Floating Stat Card (Matching Palace Mockup 30+ card) */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 15 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              className="absolute -bottom-6 sm:-bottom-8 right-2 sm:right-6 bg-white rounded-2xl p-5 sm:p-6 shadow-2xl border border-slate-100 max-w-[190px] text-center"
+            >
+              <div className="font-display text-4xl sm:text-5xl font-black text-[#e52229] leading-none">
+                22<span className="text-2xl sm:text-3xl font-bold">+</span>
               </div>
-            </Reveal>
-
-            {/* Action Buttons */}
-            <Reveal delay={0.24}>
-              <div className="mt-8 flex flex-wrap items-center gap-3.5">
-                <Button href="/about" variant="primary" showArrow>
-                  More About Us
-                </Button>
-                <Button href="/downloads" variant="outline">
-                  Download Company Profile
-                </Button>
-              </div>
-            </Reveal>
+              <p className="mt-2 text-xs sm:text-[13px] font-bold text-slate-700 leading-snug">
+                Years of Industry Experience
+              </p>
+            </motion.div>
           </div>
 
-          {/* Right Column: Facility Photography & Key Verification Card */}
-          <div className="lg:col-span-6">
-            <Reveal direction="right">
-              <div className="relative">
-                {/* 75,000 sq ft facility photography */}
-                <div className="aspect-[4/3] overflow-hidden rounded-card border border-slate-200 shadow-card">
-                  <ImagePlaceholder
-                    category="factory"
-                    label="75,000 Sq. Ft. Facility & Dedicated Bay"
-                    className="h-full w-full"
-                  />
+          {/* Right Column: Discover Story Content (Matching Palace Mockup) */}
+          <div className="lg:col-span-6 flex flex-col items-start pt-6 lg:pt-0">
+            {/* Red Eyebrow */}
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-3">
+              <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
+              <span>DISCOVER OUR STORY</span>
+            </div>
+
+            {/* Uppercase Bold Headline */}
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] font-extrabold uppercase tracking-tight text-[#0F172A] leading-tight">
+              UNVEILING JAGDAMBA PROFILE INDUSTRIAL JOURNEY
+            </h2>
+
+            {/* Description */}
+            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-600 text-left">
+              Jagdamba Profile Pvt. Ltd. has been at the forefront of Gujarat&apos;s steel processing ecosystem since 2002. From a 75,000 sq.ft. stockyard to 300 mm heavy CNC profile cutting, we eliminate project bottlenecks for heavy engineering, infrastructure, and pressure vessel fabricators across India.
+            </p>
+
+            {/* 2 Feature Items with Circular Pale Red Badge Icons */}
+            <div className="mt-8 flex flex-col gap-6 w-full">
+              {/* Feature 1: Client Centric Approach */}
+              <div className="flex items-start gap-4">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-red-50 text-[#e52229] border border-red-100 shadow-xs">
+                  <Users size={22} strokeWidth={2} />
                 </div>
-
-                {/* Key Facts Card */}
-                <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-4">
-                  <div className="rounded-card border border-slate-200 bg-slate-50 p-4 shadow-subtle">
-                    <div className="flex items-center gap-2 text-[#0C2340]">
-                      <Award size={16} className="text-[#F59E0B]" />
-                      <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Established</span>
-                    </div>
-                    <p className="mt-1 font-display text-lg font-black text-[#0C2340]">
-                      Since {company.since}
-                    </p>
-                    <p className="text-xs text-slate-500 mt-0.5">2+ Decades Industry Experience</p>
-                  </div>
-
-                  <div className="rounded-card border border-slate-200 bg-slate-50 p-4 shadow-subtle">
-                    <div className="flex items-center gap-2 text-[#0C2340]">
-                      <ShieldCheck size={16} className="text-[#F59E0B]" />
-                      <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Quality Certified</span>
-                    </div>
-                    <p className="mt-1 font-display text-lg font-black text-[#0C2340]">
-                      ISO 9001:2015
-                    </p>
-                    <p className="text-xs text-slate-500 mt-0.5">Full MTC &amp; UT Traceability</p>
-                  </div>
+                <div>
+                  <h3 className="font-display text-base font-bold text-[#0F172A]">
+                    Client Centric Approach
+                  </h3>
+                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed text-left">
+                    Tailored CNC profile cutting, custom nesting algorithms to reduce scrap, and flexible delivery schedules that align with your plant&apos;s erection deadlines.
+                  </p>
                 </div>
               </div>
-            </Reveal>
+
+              {/* Feature 2: Integrity & Transparency */}
+              <div className="flex items-start gap-4">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-red-50 text-[#e52229] border border-red-100 shadow-xs">
+                  <ShieldCheck size={22} strokeWidth={2} />
+                </div>
+                <div>
+                  <h3 className="font-display text-base font-bold text-[#0F172A]">
+                    Integrity &amp; Quality Transparency
+                  </h3>
+                  <p className="mt-1 text-xs sm:text-sm text-slate-600 leading-relaxed text-left">
+                    100% heat number traceability, digital thickness testing, ASNT Level-II ultrasonic flaw detection, and original Mill Test Certificates (MTC) with every dispatch.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Read More Pill Button (Matching Palace Mockup) */}
+            <div className="mt-8">
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center rounded-full bg-[#e52229] hover:bg-[#c81920] text-white px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md hover:shadow-red-glow transition-all duration-200 active:scale-95"
+              >
+                <span>Read More</span>
+              </Link>
+            </div>
           </div>
         </div>
       </Container>

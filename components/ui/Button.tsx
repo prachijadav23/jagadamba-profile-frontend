@@ -10,19 +10,19 @@ type Variant = "primary" | "secondary" | "outline" | "outline-light" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const baseStyles =
-  "relative inline-flex items-center justify-center gap-2.5 rounded-btn font-sans font-semibold tracking-wide select-none whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#133E87] cursor-pointer transition-colors duration-200 ease-out";
+  "relative inline-flex items-center justify-center gap-2.5 rounded-md sm:rounded-lg font-sans font-semibold tracking-wide select-none whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF5E3A] cursor-pointer transition-all duration-200 ease-out";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-[#F59E0B] hover:bg-[#D97706] text-[#0A1D33] font-bold shadow-sm hover:shadow-gold-glow border border-[#F59E0B]",
+    "bg-[#FF5E3A] hover:bg-[#E04B28] text-white font-bold shadow-sm hover:shadow-md border border-[#FF5E3A]",
   secondary:
-    "bg-[#0C2340] hover:bg-[#133E87] text-white shadow-sm hover:shadow-navy-glow border border-[#133E87]",
+    "bg-[#0F303F] hover:bg-[#0A222D] text-white shadow-sm border border-[#0F303F]",
   outline:
-    "bg-transparent text-[#0C2340] border border-[#0C2340]/40 hover:border-[#F59E0B] hover:bg-[#0C2340] hover:text-white shadow-subtle",
+    "bg-transparent text-[#0F303F] border border-[#0F303F]/30 hover:border-[#FF5E3A] hover:bg-[#0F303F] hover:text-white shadow-subtle",
   "outline-light":
-    "bg-transparent text-white border border-white/50 hover:border-[#F59E0B] hover:text-[#FBBF24] hover:bg-white/15 shadow-subtle",
+    "bg-transparent text-white border border-white/40 hover:border-[#FF5E3A] hover:text-orange-400 hover:bg-white/15 shadow-subtle",
   ghost:
-    "bg-transparent text-[#2D4B6E] hover:text-[#0C2340] hover:bg-slate-100",
+    "bg-transparent text-slate-600 hover:text-[#0F303F] hover:bg-slate-100",
 };
 
 const sizes: Record<Size, string> = {

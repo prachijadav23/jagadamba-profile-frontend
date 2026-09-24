@@ -33,15 +33,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* User requirement: All paragraph and descriptive text justified */
-p {
+/* User requirement: Paragraph and descriptive text properly aligned / justified */
+p.text-justify,
+.text-justify {
   text-align: justify;
   text-justify: inter-word;
 }
 
-.text-justify {
-  text-align: justify;
-  text-justify: inter-word;
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 h1,
@@ -55,12 +63,12 @@ h6 {
 }
 
 ::selection {
-  background-color: #0c2340;
+  background-color: #e52229;
   color: #ffffff;
 }
 
 :focus-visible {
-  outline: 2px solid #133e87;
+  outline: 2px solid #e52229;
   outline-offset: 3px;
   border-radius: 4px;
 }

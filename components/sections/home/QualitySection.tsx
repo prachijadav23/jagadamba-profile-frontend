@@ -33,7 +33,7 @@ export function QualitySection() {
                   variants={staggerItem}
                   className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300"
                 >
-                  <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#F59E0B]" />
+                  <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#e52229]" />
                   <span>{item}</span>
                 </motion.div>
               ))}
@@ -41,7 +41,7 @@ export function QualitySection() {
 
             <Reveal delay={0.2}>
               <div className="mt-7 flex flex-wrap items-center gap-3">
-                <Button href="/quality" variant="primary" showArrow>
+                <Button href="/quality" variant="primary" showArrow className="bg-[#e52229] hover:bg-[#c81920] text-white">
                   Quality &amp; Traceability
                 </Button>
                 <Button href="/contact" variant="outline-light">
@@ -54,9 +54,10 @@ export function QualitySection() {
           {/* Right Column: UT Testing Image & 5-Stage Traceability Grid */}
           <div className="lg:col-span-7">
             <Reveal direction="right">
-              <div className="aspect-[16/9] overflow-hidden rounded-card border border-white/15 shadow-card">
+              <div className="aspect-[16/9] overflow-hidden rounded-2xl border border-white/15 shadow-card">
                 <ImagePlaceholder
                   category="ut-testing"
+                  filename="/images/ut-testing.jpg"
                   label="In-House Ultrasonic Testing (UT) & Flaw Detection"
                   className="h-full w-full"
                 />
@@ -68,9 +69,9 @@ export function QualitySection() {
               {traceabilityWorkflow.map((stage, i) => (
                 <div
                   key={stage.stage}
-                  className="rounded-btn border border-white/10 bg-navy-950/80 p-3.5 backdrop-blur-sm"
+                  className="rounded-xl border border-white/10 bg-navy-950/80 p-3.5 backdrop-blur-sm"
                 >
-                  <span className="font-mono text-xs font-bold text-[#FBBF24]">0{i + 1}</span>
+                  <span className="font-mono text-xs font-bold text-red-400">0{i + 1}</span>
                   <h4 className="mt-1 font-display text-[12.5px] font-bold text-white leading-tight">
                     {stage.stage}
                   </h4>
