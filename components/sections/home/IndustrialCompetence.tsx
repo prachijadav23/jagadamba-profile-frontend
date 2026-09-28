@@ -55,7 +55,7 @@ export function IndustrialCompetence() {
                 {/* Bottom Overlay Badge */}
                 <div className="absolute bottom-6 left-6 right-6 bg-[#0F303F]/95 backdrop-blur-sm rounded-xl p-5 border border-white/10 text-white">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-[#FF5E3A] flex items-center justify-center text-white shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-[#FD6200] flex items-center justify-center text-white shrink-0">
                       <ShieldCheck size={22} strokeWidth={2.2} />
                     </div>
                     <div>
@@ -72,12 +72,12 @@ export function IndustrialCompetence() {
             </Reveal>
           </div>
 
-          {/* Right Column: AeroLogix Competence Checklist & CTA */}
+          {/* Right Column: Competence Checklist & CTA */}
           <div className="lg:col-span-6 xl:col-span-6">
             <Reveal>
               <div className="flex items-center gap-2.5 mb-3">
-                <span className="w-6 h-0.5 bg-[#FF5E3A]" />
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5E3A]">
+                <span className="w-6 h-0.5 bg-[#FD6200]" />
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FD6200]">
                   Proven Capability
                 </span>
               </div>
@@ -86,7 +86,7 @@ export function IndustrialCompetence() {
             {/* Dual-Color Heading */}
             <Reveal delay={0.06}>
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight leading-[1.18] mb-5">
-                <span className="text-[#FF5E3A]">Our industry-proven</span>{" "}
+                <span className="text-[#FD6200]">Our industry-proven</span>{" "}
                 <span className="text-[#0F303F]">competence</span>
               </h2>
             </Reveal>
@@ -102,7 +102,7 @@ export function IndustrialCompetence() {
               {competencePoints.map((item, index) => (
                 <Reveal key={item.title} delay={0.15 + index * 0.05}>
                   <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-[#FF5E3A] shrink-0 mt-0.5">
+                    <div className="w-6 h-6 rounded-full bg-orange-50 border border-orange-200/80 flex items-center justify-center text-[#FD6200] shrink-0 mt-0.5">
                       <Check size={14} strokeWidth={3} />
                     </div>
                     <div>
@@ -123,7 +123,7 @@ export function IndustrialCompetence() {
               <div className="pt-2">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-[#FF5E3A] hover:bg-[#E54D28] text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider shadow-sm transition-all duration-200 active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-[#FD6200] hover:bg-[#E55500] text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider shadow-sm transition-all duration-200 active:scale-95"
                 >
                   <span>Get In Touch Now!</span>
                   <ArrowRight size={14} strokeWidth={2.4} />

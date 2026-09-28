@@ -44,7 +44,7 @@ export function FeaturedProcessing() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 sm:mb-12">
           <div>
             {/* Red Eyebrow */}
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-2.5">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-2.5">
               <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
               <span>PLANT VISUALS</span>
             </div>
@@ -60,7 +60,7 @@ export function FeaturedProcessing() {
               type="button"
               onClick={() => setActiveDot((prev) => (prev > 0 ? prev - 1 : 3))}
               aria-label="Previous facility item"
-              className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e52229] hover:text-[#e52229] transition-colors shadow-xs active:scale-95 cursor-pointer"
+              className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#FD6200] hover:text-[#FD6200] transition-colors shadow-xs active:scale-95 cursor-pointer"
             >
               <ChevronLeft size={17} />
             </button>
@@ -68,7 +68,7 @@ export function FeaturedProcessing() {
               type="button"
               onClick={() => setActiveDot((prev) => (prev < 3 ? prev + 1 : 0))}
               aria-label="Next facility item"
-              className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#e52229] hover:text-[#e52229] transition-colors shadow-xs active:scale-95 cursor-pointer"
+              className="grid h-9 w-9 place-items-center rounded-full border border-slate-300 bg-white text-slate-700 hover:border-[#FD6200] hover:text-[#FD6200] transition-colors shadow-xs active:scale-95 cursor-pointer"
             >
               <ChevronRight size={17} />
             </button>
@@ -110,7 +110,7 @@ export function FeaturedProcessing() {
                   </span>
 
                   {/* Bold Uppercase Location/Name */}
-                  <h3 className="mt-1 font-display text-sm sm:text-base font-extrabold uppercase tracking-tight text-white group-hover:text-red-300 transition-colors leading-snug">
+                  <h3 className="mt-1 font-display text-sm sm:text-base font-extrabold uppercase tracking-tight text-white group-hover:text-[#FD6200] transition-colors leading-snug">
                     {item.title}
                   </h3>
                 </div>
@@ -129,7 +129,7 @@ export function FeaturedProcessing() {
               aria-label={`Go to slide ${idx + 1}`}
               className={`transition-all duration-200 cursor-pointer ${
                 activeDot === idx
-                  ? "h-2 w-6 rounded-full bg-[#e52229]"
+                  ? "h-2 w-6 rounded-full bg-[#FD6200]"
                   : "h-2 w-2 rounded-full bg-slate-300 hover:bg-slate-400"
               }`}
             />

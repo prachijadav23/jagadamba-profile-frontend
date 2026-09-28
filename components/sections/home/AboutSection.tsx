@@ -33,7 +33,7 @@ export function AboutSection() {
               transition={{ duration: 0.4, delay: 0.2 }}
               className="absolute -bottom-6 sm:-bottom-8 right-2 sm:right-6 bg-white rounded-2xl p-5 sm:p-6 shadow-2xl border border-slate-100 max-w-[190px] text-center"
             >
-              <div className="font-display text-4xl sm:text-5xl font-black text-[#e52229] leading-none">
+              <div className="font-display text-4xl sm:text-5xl font-black text-[#FD6200] leading-none">
                 22<span className="text-2xl sm:text-3xl font-bold">+</span>
               </div>
               <p className="mt-2 text-xs sm:text-[13px] font-bold text-slate-700 leading-snug">
@@ -45,7 +45,7 @@ export function AboutSection() {
           {/* Right Column: Discover Story Content (Matching Palace Mockup) */}
           <div className="lg:col-span-6 flex flex-col items-start pt-6 lg:pt-0">
             {/* Red Eyebrow */}
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-3">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-3">
               <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
               <span>DISCOVER OUR STORY</span>
             </div>
@@ -64,7 +64,7 @@ export function AboutSection() {
             <div className="mt-8 flex flex-col gap-6 w-full">
               {/* Feature 1: Client Centric Approach */}
               <div className="flex items-start gap-4">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-red-50 text-[#e52229] border border-red-100 shadow-xs">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-orange-50 text-[#FD6200] border border-orange-100 shadow-xs">
                   <Users size={22} strokeWidth={2} />
                 </div>
                 <div>
@@ -79,7 +79,7 @@ export function AboutSection() {
 
               {/* Feature 2: Integrity & Transparency */}
               <div className="flex items-start gap-4">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-red-50 text-[#e52229] border border-red-100 shadow-xs">
+                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-orange-50 text-[#FD6200] border border-orange-100 shadow-xs">
                   <ShieldCheck size={22} strokeWidth={2} />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export function AboutSection() {
             <div className="mt-8">
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center rounded-full bg-[#e52229] hover:bg-[#c81920] text-white px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md hover:shadow-red-glow transition-all duration-200 active:scale-95"
+                className="inline-flex items-center justify-center rounded-full bg-[#FD6200] hover:bg-[#E55500] text-white px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md hover:shadow-red-glow transition-all duration-200 active:scale-95"
               >
                 <span>Read More</span>
               </Link>

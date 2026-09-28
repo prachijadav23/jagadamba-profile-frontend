@@ -25,7 +25,7 @@ export function WhatsAppButton() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 12 }}
           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40"
+          className="fixed bottom-6 right-6 z-40 hidden lg:block"
         >
           <a
             href={`https://wa.me/${company.whatsapp}?text=${message}`}

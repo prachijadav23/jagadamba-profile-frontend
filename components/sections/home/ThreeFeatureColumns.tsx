@@ -43,11 +43,11 @@ export function ThreeFeatureColumns() {
               <Reveal key={item.title} delay={index * 0.1}>
                 <div className="bg-white p-8 rounded-xl border border-slate-200/80 shadow-xs hover:shadow-md transition-shadow group flex flex-col h-full">
                   {/* Outline Orange Icon Container */}
-                  <div className="w-14 h-14 rounded-lg bg-orange-50 border border-orange-200/80 flex items-center justify-center text-[#FF5E3A] mb-6 group-hover:bg-[#FF5E3A] group-hover:text-white transition-colors duration-200">
+                  <div className="w-14 h-14 rounded-lg bg-orange-50 border border-orange-200/80 flex items-center justify-center text-[#FD6200] mb-6 group-hover:bg-[#FD6200] group-hover:text-white transition-colors duration-200">
                     <Icon size={28} strokeWidth={2} />
                   </div>
 
-                  <h3 className="text-xl font-extrabold text-[#0F303F] mb-3 group-hover:text-[#FF5E3A] transition-colors">
+                  <h3 className="text-xl font-extrabold text-[#0F303F] mb-3 group-hover:text-[#FD6200] transition-colors">
                     {item.title}
                   </h3>
 
@@ -57,7 +57,7 @@ export function ThreeFeatureColumns() {
 
                   <Link
                     href={item.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FF5E3A] hover:text-[#0F303F] transition-colors pt-4 border-t border-slate-100"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] hover:text-[#0F303F] transition-colors pt-4 border-t border-slate-100"
                   >
                     <span>{item.linkText}</span>
                     <ArrowRight size={13} strokeWidth={2.4} />

@@ -36,7 +36,7 @@ export function ScrollProgress() {
       {/* Top horizontal reading progress bar */}
       <motion.div
         style={{ scaleX, transformOrigin: "0%" }}
-        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0C2340] via-[#133E87] to-[#38BDF8] z-[9999] pointer-events-none"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#02496E] via-[#FD6200] to-orange-400 shadow-[0_0_8px_rgba(253,98,0,0.6)] z-[9999] pointer-events-none"
       />
 
       {/* Floating back-to-top button positioned safely above the WhatsApp button */}
@@ -51,7 +51,7 @@ export function ScrollProgress() {
             whileTap={{ scale: 0.95 }}
             onClick={scrollToTop}
             aria-label="Scroll back to top"
-            className="fixed bottom-[74px] right-5 sm:bottom-[76px] sm:right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full bg-[#0C2340]/95 text-white shadow-card backdrop-blur-sm border border-[#133E87]/50 transition-colors hover:border-[#38BDF8] hover:text-[#7DD3FC] group"
+            className="fixed bottom-[74px] right-5 sm:bottom-[76px] sm:right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full bg-[#0A222D]/95 text-white shadow-card backdrop-blur-sm border border-[#143B4E] transition-colors hover:border-[#FD6200] hover:text-[#FD6200] group"
           >
             {/* Circular progress SVG */}
             <svg className="absolute inset-0 h-full w-full -rotate-90 p-1" viewBox="0 0 44 44">
@@ -74,7 +74,7 @@ export function ScrollProgress() {
                 strokeDasharray={113.1}
                 strokeDashoffset={113.1 - (113.1 * scrollPercentage) / 100}
                 strokeLinecap="round"
-                className="text-[#38BDF8] transition-all duration-150"
+                className="text-[#FD6200] transition-all duration-150"
               />
             </svg>
 

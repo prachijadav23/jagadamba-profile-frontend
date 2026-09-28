@@ -32,7 +32,7 @@ export function SectionHeading({
             className={cn(
               "mb-2.5 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider",
               align === "center" && "justify-center",
-              light ? "text-[#FFA893]" : "text-[#FF5E3A]"
+              light ? "text-orange-300" : "text-[#FD6200]"
             )}
           >
             <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>

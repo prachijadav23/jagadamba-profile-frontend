@@ -52,7 +52,7 @@ export function TickerSection() {
               key={i}
               className="inline-flex shrink-0 items-center gap-3 px-5 text-xs font-bold uppercase tracking-[0.16em] text-slate-200"
             >
-              <span className="text-[#FF5E3A] font-black text-xs">◆</span>
+              <span className="text-[#FD6200] font-black text-xs">◆</span>
               <span>{cap}</span>
             </span>
           ))}
@@ -78,7 +78,7 @@ export function TickerSection() {
               key={i}
               className="inline-flex shrink-0 items-center gap-3 px-5 text-[11px] font-extrabold uppercase tracking-[0.18em] text-slate-300 hover:text-white transition-colors"
             >
-              <span className="text-[#FF5E3A] font-black text-[10px]">&bull;</span>
+              <span className="text-[#FD6200] font-black text-[10px]">&bull;</span>
               <span>{mill}</span>
             </span>
           ))}

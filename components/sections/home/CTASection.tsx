@@ -14,7 +14,7 @@ export function CTASection() {
         <div className="rounded-3xl bg-slate-50 border border-slate-200 p-8 sm:p-12 lg:p-16 mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-3">
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-3">
                 <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
                 <span>PROJECT ENQUIRY</span>
               </div>
@@ -29,14 +29,14 @@ export function CTASection() {
             <div className="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
               <Link
                 href="/quote#upload"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#e52229] hover:bg-[#c81920] text-white px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm hover:shadow-red-glow transition-all duration-200 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FD6200] hover:bg-[#E55500] text-white px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm hover:shadow-red-glow transition-all duration-200 active:scale-95"
               >
                 <FileUp size={16} />
                 <span>Upload Drawing</span>
               </Link>
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-slate-100 text-[#0F172A] border border-slate-300 px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-xs hover:border-[#e52229] transition-all duration-200 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-slate-100 text-[#0F172A] border border-slate-300 px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-xs hover:border-[#FD6200] transition-all duration-200 active:scale-95"
               >
                 <span>Get a Quote</span>
               </Link>
@@ -58,7 +58,7 @@ export function CTASection() {
         {/* Lower 3 Clear Paths (Matching finalj-wheat.vercel.app "Ready When Your Project Is") */}
         <div>
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-2">
               <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
               <span>NEXT STEP</span>
             </div>
@@ -75,7 +75,7 @@ export function CTASection() {
             <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
               <Link
                 href="/quote"
-                className="flex flex-col justify-between h-full p-6 sm:p-7 rounded-2xl bg-[#e52229] text-white shadow-md hover:shadow-red-glow transition-all"
+                className="flex flex-col justify-between h-full p-6 sm:p-7 rounded-2xl bg-[#FD6200] text-white shadow-md hover:shadow-red-glow transition-all"
               >
                 <div>
                   <FileText size={24} className="mb-4 text-white/90" />
@@ -97,10 +97,10 @@ export function CTASection() {
             <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
               <Link
                 href="/products/steel-plates"
-                className="flex flex-col justify-between h-full p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 text-[#0F172A] shadow-xs hover:border-[#e52229] transition-all"
+                className="flex flex-col justify-between h-full p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 text-[#0F172A] shadow-xs hover:border-[#FD6200] transition-all"
               >
                 <div>
-                  <PackageSearch size={24} className="mb-4 text-[#e52229]" />
+                  <PackageSearch size={24} className="mb-4 text-[#FD6200]" />
                   <h4 className="font-display text-lg font-bold uppercase tracking-wide">
                     Check Material Stock
                   </h4>
@@ -108,7 +108,7 @@ export function CTASection() {
                     Ask availability for plates, grades and processing slots at our 75,000 sq.ft. Vadodara yard.
                   </p>
                 </div>
-                <div className="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#e52229]">
+                <div className="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#FD6200]">
                   <span>View Plate Stock</span>
                   <ArrowRight size={14} />
                 </div>

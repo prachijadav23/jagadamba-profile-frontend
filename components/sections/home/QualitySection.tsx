@@ -33,7 +33,7 @@ export function QualitySection() {
                   variants={staggerItem}
                   className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300"
                 >
-                  <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#e52229]" />
+                  <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-[#FD6200]" />
                   <span>{item}</span>
                 </motion.div>
               ))}
@@ -41,7 +41,7 @@ export function QualitySection() {
 
             <Reveal delay={0.2}>
               <div className="mt-7 flex flex-wrap items-center gap-3">
-                <Button href="/quality" variant="primary" showArrow className="bg-[#e52229] hover:bg-[#c81920] text-white">
+                <Button href="/quality" variant="primary" showArrow className="bg-[#FD6200] hover:bg-[#E55500] text-white">
                   Quality &amp; Traceability
                 </Button>
                 <Button href="/contact" variant="outline-light">
@@ -71,7 +71,7 @@ export function QualitySection() {
                   key={stage.stage}
                   className="rounded-xl border border-white/10 bg-navy-950/80 p-3.5 backdrop-blur-sm"
                 >
-                  <span className="font-mono text-xs font-bold text-red-400">0{i + 1}</span>
+                  <span className="font-mono text-xs font-bold text-[#FD6200]">0{i + 1}</span>
                   <h4 className="mt-1 font-display text-[12.5px] font-bold text-white leading-tight">
                     {stage.stage}
                   </h4>

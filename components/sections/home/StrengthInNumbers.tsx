@@ -45,7 +45,7 @@ export function StrengthInNumbers() {
       <Container>
         {/* Section Heading matching Palace red eyebrow */}
         <div className="max-w-2xl mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-2.5">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-2.5">
             <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
             <span>CAPABILITY</span>
           </div>
@@ -67,14 +67,14 @@ export function StrengthInNumbers() {
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: index * 0.08 }}
               whileHover={{ y: -4 }}
-              className="relative p-6 sm:p-7 rounded-2xl bg-slate-50/80 border border-slate-200/90 shadow-xs hover:border-[#e52229]/40 hover:bg-white hover:shadow-md transition-all duration-200"
+              className="relative p-6 sm:p-7 rounded-2xl bg-slate-50/80 border border-slate-200/90 shadow-xs hover:border-[#FD6200]/40 hover:bg-white hover:shadow-md transition-all duration-200"
             >
               {/* Stat Value */}
               <p className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0F172A] tabular-nums">
                 {stat.value}
               </p>
               {/* Unit Tag */}
-              <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#e52229]">
+              <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#FD6200]">
                 {stat.unit}
               </p>
               {/* Label */}
@@ -100,9 +100,9 @@ export function StrengthInNumbers() {
           {capabilityPills.map((pill) => (
             <span
               key={pill}
-              className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-slate-700 hover:border-[#e52229] hover:text-[#e52229] transition-colors shadow-xs"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-bold uppercase tracking-wide text-slate-700 hover:border-[#FD6200] hover:text-[#FD6200] transition-colors shadow-xs"
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-[#e52229]" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#FD6200]" />
               <span>{pill}</span>
             </span>
           ))}

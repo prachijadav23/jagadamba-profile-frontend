@@ -41,21 +41,21 @@ export function ProcessingDivisions() {
   return (
     <section className="py-20 lg:py-24 bg-slate-50 border-t border-slate-200">
       <Container>
-        {/* Centered AeroLogix Dual-Color Section Header */}
+        {/* Centered Dual-Color Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-14">
           <Reveal>
             <div className="inline-flex items-center gap-2.5 mb-3">
-              <span className="w-6 h-0.5 bg-[#FF5E3A]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5E3A]">
+              <span className="w-6 h-0.5 bg-[#FD6200]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FD6200]">
                 Specialized Divisions
               </span>
-              <span className="w-6 h-0.5 bg-[#FF5E3A]" />
+              <span className="w-6 h-0.5 bg-[#FD6200]" />
             </div>
           </Reveal>
 
           <Reveal delay={0.06}>
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight leading-[1.18] mb-4">
-              <span className="text-[#FF5E3A]">Specialized</span>{" "}
+              <span className="text-[#FD6200]">Specialized</span>{" "}
               <span className="text-[#0F303F]">processing divisions</span>
             </h2>
           </Reveal>
@@ -67,7 +67,7 @@ export function ProcessingDivisions() {
           </Reveal>
         </div>
 
-        {/* 4 AeroLogix Rounded Industrial Cards with Dark Petrol Navy Caption Bars */}
+        {/* 4 Rounded Industrial Cards with Dark Petrol Navy Caption Bars */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {divisions.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>
@@ -91,7 +91,7 @@ export function ProcessingDivisions() {
                 {/* Card Bottom Solid Petrol Navy Caption Bar (#0F303F) */}
                 <div className="bg-[#0F303F] text-white p-5 grow flex flex-col justify-between transition-colors group-hover:bg-[#0A222D]">
                   <div>
-                    <h3 className="text-base font-bold text-white mb-2 group-hover:text-[#FF5E3A] transition-colors">
+                    <h3 className="text-base font-bold text-white mb-2 group-hover:text-[#FD6200] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-xs text-slate-300 leading-relaxed mb-4">
@@ -99,7 +99,7 @@ export function ProcessingDivisions() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FF5E3A] pt-3 border-t border-white/10">
+                  <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] pt-3 border-t border-white/10">
                     <span>Explore Bay</span>
                     <ArrowRight
                       size={13}

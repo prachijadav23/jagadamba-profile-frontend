@@ -30,25 +30,28 @@ export default function DownloadsPage() {
               const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[doc.icon] ?? Icons.FileText;
               return (
                 <Reveal key={doc.name} delay={(i % 3) * 0.06}>
-                  <div className="flex h-full flex-col justify-between rounded-card border border-hairline-light bg-white p-6">
+                  <div className="flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-xs hover:shadow-md transition-shadow">
                     <div>
-                      <span className="grid h-11 w-11 place-items-center rounded-xs bg-blue-50 text-blue-900">
-                        <Icon size={20} strokeWidth={1.75} />
+                      <span className="grid h-11 w-11 place-items-center rounded-lg bg-orange-50 text-[#FD6200] border border-orange-200">
+                        <Icon size={20} strokeWidth={2} />
                       </span>
-                      <h3 className="mt-4 font-display text-base font-bold text-ink-primary">{doc.name}</h3>
+                      <h3 className="mt-4 font-display text-base font-bold text-[#0A222D]">{doc.name}</h3>
                       {"ref" in doc && doc.ref && (
-                        <p className="mt-1 text-xs text-ink-muted">{doc.ref}</p>
+                        <p className="mt-1 text-xs text-slate-500">{doc.ref}</p>
                       )}
                     </div>
                     {doc.status === "available" ? (
-                      <button className="mt-5 flex w-fit items-center gap-2 rounded-btn bg-blue-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-950">
-                        <Download size={15} />
-                        Download
-                      </button>
+                      <a
+                        href={`mailto:${company.email}?subject=Request for Document: ${encodeURIComponent(doc.name)}`}
+                        className="mt-5 flex w-fit items-center gap-2 rounded-lg bg-[#FD6200] px-4 py-2 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#E55500]"
+                      >
+                        <Download size={14} />
+                        Request Copy
+                      </a>
                     ) : (
-                      <span className="mt-5 flex w-fit items-center gap-2 rounded-btn border border-hairline-medium px-4 py-2.5 text-sm font-medium text-ink-subtle">
-                        <Clock size={15} />
-                        Coming soon
+                      <span className="mt-5 flex w-fit items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-xs font-medium text-slate-500">
+                        <Clock size={14} />
+                        On Request
                       </span>
                     )}
                   </div>
@@ -69,31 +72,31 @@ export default function DownloadsPage() {
                 </p>
               </div>
               <div>
-                <p className="text-xs font-medium text-ink-muted">MSME / Udyam</p>
-                <p className="mt-1 text-sm font-semibold text-ink-primary">{company.registrations.udyam}</p>
+                <p className="text-xs font-medium text-slate-500">MSME / Udyam</p>
+                <p className="mt-1 text-sm font-semibold text-[#0A222D]">{company.registrations.udyam}</p>
               </div>
               <div>
-                <p className="text-xs font-medium text-ink-muted">GST</p>
-                <p className="mt-1 text-sm font-semibold text-ink-primary">GSTIN {company.registrations.gst}</p>
+                <p className="text-xs font-medium text-slate-500">GST</p>
+                <p className="mt-1 text-sm font-semibold text-[#0A222D]">GSTIN {company.registrations.gst}</p>
               </div>
             </div>
-            <p className="mt-4 text-xs leading-relaxed text-ink-muted">
-              Downloads are frontend placeholders — connect real PDF assets or a CMS to make
-              them live. ISO validity is subject to the surveillance conditions stated on the
-              certificate.
+            <p className="mt-4 text-xs leading-relaxed text-slate-500">
+              Official certified documentation including ISO certifications, MSME registration records, and GST certificates are released upon request during formal vendor registration or RFQ evaluation. ISO validity is governed by periodic surveillance audit terms.
             </p>
           </div>
         </Container>
       </section>
 
-      <section className="bg-surface-secondary py-16">
+      <section className="bg-slate-50 py-16">
         <Container>
-          <SectionHeading kicker="Company Profile" title="Need something not listed here?" />
+          <SectionHeading kicker="Vendor Support" title="Need custom compliance or documentation?" />
           <Reveal delay={0.1}>
-            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-ink-secondary">
-              Write to <a href={`mailto:${company.email}`} className="font-semibold text-blue-900 underline">{company.email}</a> and
-              we&apos;ll share the specific document or certificate your vendor onboarding
-              process requires.
+            <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-slate-600">
+              Direct all vendor registration questionnaires and audit requests to{" "}
+              <a href={`mailto:${company.email}`} className="font-semibold text-[#FD6200] underline">
+                {company.email}
+              </a>
+              . Our compliance desk responds within 24 business hours.
             </p>
           </Reveal>
         </Container>

@@ -2,38 +2,26 @@ export type NavChild = { label: string; href: string; blurb?: string };
 export type NavItem = { label: string; href: string; children?: NavChild[] };
 
 export const primaryNav: NavItem[] = [
-  { label: "About", href: "/about" },
-  {
-    label: "Products",
-    href: "/products",
-    children: [
-      { label: "Steel Plates", href: "/products/steel-plates", blurb: "3 mm – 300 mm ready stock" },
-      { label: "Steel Makes", href: "/products/steel-makes", blurb: "Jindal, SAIL, JSW, Tata, AM/NS" },
-      { label: "Material Categories", href: "/products/material-categories", blurb: "Carbon, alloy, wear-resistant" },
-    ],
-  },
+  { label: "Home", href: "/" },
   {
     label: "Services",
     href: "/services",
     children: [
       { label: "CNC Profile Cutting", href: "/services/cnc-profile-cutting" },
-      { label: "Laser Cutting", href: "/services/laser-cutting" },
-      { label: "CNC Drilling", href: "/services/cnc-drilling" },
+      { label: "Fiber Laser Cutting", href: "/services/laser-cutting" },
+      { label: "CNC Drilling & Flanges", href: "/services/cnc-drilling" },
       { label: "Heavy Plate Cutting", href: "/services/heavy-plate-cutting" },
-      { label: "UT Testing", href: "/services/ut-testing" },
-      { label: "Thickness Measurement", href: "/services/thickness-measurement" },
-      { label: "Inspection & Traceability", href: "/services/inspection-traceability" },
-      { label: "Handling & Delivery", href: "/services/handling-delivery" },
+      { label: "Ultrasonic UT Testing", href: "/services/ut-testing" },
     ],
   },
-  { label: "Machinery", href: "/machinery" },
-  { label: "Infrastructure", href: "/infrastructure" },
-  { label: "Quality", href: "/quality" },
-  { label: "Grades & Data", href: "/grades" },
-  { label: "Industries", href: "/industries" },
+  { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Downloads", href: "/downloads" },
+  { label: "Machinery", href: "/machinery" },
+  { label: "Grades", href: "/grades" },
+  { label: "Quality", href: "/quality" },
+  { label: "Contact", href: "/contact" },
 ];
+
 
 export const footerColumns: { title: string; links: NavChild[] }[] = [
   {

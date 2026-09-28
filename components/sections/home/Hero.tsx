@@ -74,9 +74,9 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35 }}
-              className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-sm px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#e52229] border border-red-100 shadow-xs mb-5"
+              className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-sm px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#FD6200] border border-red-100 shadow-xs mb-5"
             >
-              <span className="h-2 w-2 rounded-full bg-[#e52229] animate-pulse" />
+              <span className="h-2 w-2 rounded-full bg-[#FD6200] animate-pulse" />
               <span>SINCE 2002 &bull; VADODARA, GUJARAT</span>
             </motion.div>
 
@@ -88,11 +88,11 @@ export function Hero() {
               className="font-display text-4xl sm:text-5xl lg:text-[54px] font-black uppercase tracking-tight text-[#0F172A] leading-[1.08]"
             >
               DISCOVER NEXT PERFECT{" "}
-              <span className="text-[#e52229] relative inline-block">
+              <span className="text-[#FD6200] relative inline-block">
                 STEEL
                 {/* Curved playful brush underline */}
                 <svg
-                  className="absolute -bottom-1.5 left-0 w-full h-3 text-[#e52229] overflow-visible"
+                  className="absolute -bottom-1.5 left-0 w-full h-3 text-[#FD6200] overflow-visible"
                   viewBox="0 0 100 20"
                   preserveAspectRatio="none"
                 >
@@ -114,7 +114,7 @@ export function Hero() {
               transition={{ duration: 0.45, delay: 0.14 }}
               className="mt-4 font-display text-base sm:text-lg font-bold uppercase tracking-wide text-[#0F172A]"
             >
-              Precision in Steel. <span className="text-[#e52229]">Strength in Every Cut.</span>
+              Precision in Steel. <span className="text-[#FD6200]">Strength in Every Cut.</span>
             </motion.p>
 
             <motion.p
@@ -142,7 +142,7 @@ export function Hero() {
                     onClick={() => setActiveTab(tab)}
                     className={`rounded-full px-4 py-1.5 text-xs font-bold transition-all cursor-pointer ${
                       activeTab === tab
-                        ? "bg-[#e52229] text-white shadow-sm"
+                        ? "bg-[#FD6200] text-white shadow-sm"
                         : "bg-white/80 text-slate-700 hover:bg-white"
                     }`}
                   >
@@ -206,7 +206,7 @@ export function Hero() {
                 <button
                   type="submit"
                   aria-label="Search steel specifications"
-                  className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-[#e52229] hover:bg-[#c81920] text-white shadow-md hover:shadow-red-glow transition-all duration-200 active:scale-95 cursor-pointer self-center"
+                  className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-[#FD6200] hover:bg-[#E55500] text-white shadow-md hover:shadow-red-glow transition-all duration-200 active:scale-95 cursor-pointer self-center"
                 >
                   <Search size={20} strokeWidth={2.4} />
                 </button>
@@ -221,14 +221,14 @@ export function Hero() {
             >
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#e52229] hover:bg-[#c81920] text-white px-6 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm hover:shadow-red-glow transition-all duration-200 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FD6200] hover:bg-[#E55500] text-white px-6 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm hover:shadow-red-glow transition-all duration-200 active:scale-95"
               >
                 <span>Get a Quote</span>
                 <ArrowRight size={15} />
               </Link>
               <Link
                 href="/quote#upload"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-300 px-5 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-xs hover:border-[#e52229] transition-all duration-200 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-300 px-5 py-2.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-xs hover:border-[#FD6200] transition-all duration-200 active:scale-95"
               >
                 <span>Upload Drawing</span>
               </Link>

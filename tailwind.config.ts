@@ -38,19 +38,19 @@ const config: Config = {
           100: "#EBF2FA",
           50: "#F4F7FB", // Ice cool steel gray
         },
-        // Electric Crimson Red Palette (Matching new reference mockup)
+        // Electric Crimson Red Palette removed - remapped to brand industrial orange
         red: {
-          50: "#FEF2F2",
-          100: "#FEE2E2",
-          200: "#FECACA",
-          300: "#FCA5A5",
-          400: "#F87171",
-          500: "#EF4444",
-          600: "#E52229", // Primary Electric Crimson Red
-          700: "#C81920",
-          800: "#991B1B",
-          900: "#7F1D1D",
-          950: "#450A0A",
+          50: "#FFF7ED",
+          100: "#FFEDD5",
+          200: "#FED7AA",
+          300: "#FDBA74",
+          400: "#FB923C",
+          500: "#FD6200",
+          600: "#E55500", // Remapped to vibrant brand orange
+          700: "#C74700",
+          800: "#9A3412",
+          900: "#7C2D12",
+          950: "#431407",
         },
         // Soft Sky Tint (Matching new reference hero background)
         skyTint: {
@@ -59,44 +59,44 @@ const config: Config = {
           200: "#D5E4F9",
           300: "#BDD5F5",
         },
-        // Vibrant Industrial Warm Orange Palette
+        // Vibrant Industrial Warm Orange Palette (From Logo)
         orange: {
           50: "#FFF7ED",
           100: "#FFEDD5",
           200: "#FED7AA",
           300: "#FDBA74",
           400: "#FB923C",
-          500: "#F97316",
-          600: "#E52229", // Mapped to primary electric red
-          700: "#C81920",
+          500: "#FD6200", // Official Vibrant Industrial Orange from Logo
+          600: "#E55500", // Hover Orange
+          700: "#C74700",
           800: "#9A3412",
           900: "#7C2D12",
           950: "#431407",
         },
         // Gold / Amber Accent Palette
         gold: {
-          50: "#FEF2F2",
-          100: "#FEE2E2",
-          200: "#FECACA",
-          300: "#FCA5A5",
-          400: "#F87171",
-          500: "#E52229", // Mapped to primary electric red
-          600: "#C81920",
-          700: "#991B1B",
-          800: "#7F1D1D",
-          900: "#450A0A",
+          50: "#FFF7ED",
+          100: "#FFEDD5",
+          200: "#FED7AA",
+          300: "#FDBA74",
+          400: "#FB923C",
+          500: "#FD6200",
+          600: "#E55500",
+          700: "#C74700",
+          800: "#9A3412",
+          900: "#7C2D12",
         },
-        // AeroLogix Industrial Palette (From Reference Mockup)
+        // Industrial Orange Palette (Matching Logo)
         aeroOrange: {
-          50: "#FFF5F2",
-          100: "#FFE8E2",
-          200: "#FFD1C5",
-          300: "#FFA893",
-          400: "#FF7D5E",
-          500: "#FF5E3A", // Primary AeroLogix Industrial Orange
-          600: "#FF6B35",
-          700: "#E04B28", // Hover Orange
-          800: "#B83A1D",
+          50: "#FFF7ED",
+          100: "#FFEDD5",
+          200: "#FED7AA",
+          300: "#FDBA74",
+          400: "#FB923C",
+          500: "#FD6200", // Primary Industrial Orange
+          600: "#FD6200",
+          700: "#E55500", // Hover Orange
+          800: "#C74700",
           900: "#802511",
         },
         petrolNavy: {
@@ -115,20 +115,20 @@ const config: Config = {
         },
         // Primary Brand Action / Industrial Palette
         brand: {
-          red: "#FF5E3A",
-          redHover: "#E04B28",
-          redLight: "#FFE8E2",
-          orange: "#FF5E3A",
-          orangeHover: "#E04B28",
-          orangeLight: "#FFE8E2",
-          gold: "#FF5E3A",
-          goldHover: "#E04B28",
-          goldLight: "#FFE8E2",
+          red: "#FD6200",
+          redHover: "#E55500",
+          redLight: "#FFF5EE",
+          orange: "#FD6200",
+          orangeHover: "#E55500",
+          orangeLight: "#FFF5EE",
+          gold: "#FD6200",
+          goldHover: "#E55500",
+          goldLight: "#FFF5EE",
           navy: "#0F303F",
           navyDark: "#0A222D",
           navyDeep: "#06151D",
-          blue: "#153D50",
-          accent: "#FF5E3A",
+          blue: "#02496E", // Logo Corporate Blue
+          accent: "#FD6200",
           light: "#F8FAFC",
         },
         // Clean neutral surfaces
@@ -189,9 +189,9 @@ const config: Config = {
         "card-hover": "0 10px 24px rgba(12, 35, 64, 0.13)",
         "blue-glow": "0 6px 20px rgba(19, 62, 135, 0.3)",
         "navy-glow": "0 6px 20px rgba(12, 35, 64, 0.35)",
-        "red-glow": "0 6px 24px rgba(229, 34, 41, 0.4)",
-        "orange-glow": "0 6px 24px rgba(229, 34, 41, 0.4)",
-        "gold-glow": "0 6px 24px rgba(229, 34, 41, 0.4)",
+        "red-glow": "0 6px 24px rgba(253, 98, 0, 0.4)",
+        "orange-glow": "0 6px 24px rgba(253, 98, 0, 0.4)",
+        "gold-glow": "0 6px 24px rgba(253, 98, 0, 0.4)",
       },
       backgroundImage: {
         "grad-navy": "linear-gradient(135deg, #0C2340 0%, #133E87 100%)",

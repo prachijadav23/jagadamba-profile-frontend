@@ -126,9 +126,8 @@ export function EnquiryForm({ variant = "quote" }: { variant?: Variant }) {
           <RotateCcw size={14} />
           Submit another enquiry
         </button>
-        <p className="mt-6 max-w-sm text-[11px] text-ink-subtle">
-          Demo confirmation — this form is a frontend-only preview. Connect it to a live
-          endpoint to send real enquiries.
+        <p className="mt-6 max-w-sm text-[11px] text-slate-500">
+          Our engineering desk will review your bill of materials and deliver an itemized quotation with plate nesting layout.
         </p>
       </motion.div>
     );
@@ -198,8 +197,8 @@ export function EnquiryForm({ variant = "quote" }: { variant?: Variant }) {
             )}
           </AnimatePresence>
         </Button>
-        <span className="text-xs text-ink-subtle">
-          Frontend demo — no data is sent until a backend is connected.
+        <span className="text-xs text-slate-500">
+          Official quotation turnaround within 2 hours. ISO 9001:2015 certified processing.
         </span>
       </div>
     </form>

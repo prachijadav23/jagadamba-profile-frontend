@@ -15,17 +15,17 @@ export function IndustrialOverview() {
           <div className="lg:col-span-6 xl:col-span-6">
             <Reveal>
               <div className="flex items-center gap-2.5 mb-3">
-                <span className="w-6 h-0.5 bg-[#FF5E3A]" />
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5E3A]">
+                <span className="w-6 h-0.5 bg-[#FD6200]" />
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FD6200]">
                   Who We Are
                 </span>
               </div>
             </Reveal>
 
-            {/* Dual-Color Heading matching AeroLogix */}
+            {/* Dual-Color Heading */}
             <Reveal delay={0.06}>
               <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight leading-[1.18] mb-6">
-                <span className="text-[#FF5E3A]">Providing full range</span>{" "}
+                <span className="text-[#FD6200]">Providing full range</span>{" "}
                 <span className="text-[#0F303F]">of steel processing</span>
               </h2>
             </Reveal>
@@ -47,30 +47,30 @@ export function IndustrialOverview() {
             <Reveal delay={0.22}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-9">
                 <div className="flex items-center gap-2 text-sm font-semibold text-[#0F303F]">
-                  <CheckCircle2 size={16} className="text-[#FF5E3A] shrink-0" />
+                  <CheckCircle2 size={16} className="text-[#FD6200] shrink-0" />
                   <span>Up to 300 mm Flame Cutting</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-[#0F303F]">
-                  <CheckCircle2 size={16} className="text-[#FF5E3A] shrink-0" />
+                  <CheckCircle2 size={16} className="text-[#FD6200] shrink-0" />
                   <span>12 kW Fiber Laser Precision</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-[#0F303F]">
-                  <CheckCircle2 size={16} className="text-[#FF5E3A] shrink-0" />
+                  <CheckCircle2 size={16} className="text-[#FD6200] shrink-0" />
                   <span>2,500+ MT Certified Inventory</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm font-semibold text-[#0F303F]">
-                  <CheckCircle2 size={16} className="text-[#FF5E3A] shrink-0" />
+                  <CheckCircle2 size={16} className="text-[#FD6200] shrink-0" />
                   <span>In-House Ultrasonic UT Lab</span>
                 </div>
               </div>
             </Reveal>
 
-            {/* AeroLogix Action Row: Discover More Button + Call Anytime Widget */}
+            {/* Action Row: Discover More Button + Call Anytime Widget */}
             <Reveal delay={0.26}>
               <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-2">
                 <Link
                   href="/about"
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-[#FF5E3A] hover:bg-[#E54D28] text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider shadow-sm transition-all duration-200 active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-[#FD6200] hover:bg-[#E55500] text-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider shadow-sm transition-all duration-200 active:scale-95"
                 >
                   <span>Discover More</span>
                   <ArrowRight size={14} strokeWidth={2.4} />
@@ -81,14 +81,14 @@ export function IndustrialOverview() {
                   href="tel:+919824917250"
                   className="flex items-center gap-3 group text-left"
                 >
-                  <div className="w-11 h-11 rounded-full bg-orange-100 flex items-center justify-center text-[#FF5E3A] group-hover:bg-[#FF5E3A] group-hover:text-white transition-colors duration-200">
+                  <div className="w-11 h-11 rounded-full bg-orange-50 border border-orange-200 flex items-center justify-center text-[#FD6200] group-hover:bg-[#FD6200] group-hover:text-white transition-colors duration-200">
                     <Phone size={18} strokeWidth={2.4} />
                   </div>
                   <div className="leading-tight">
                     <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">
                       Call Anytime
                     </span>
-                    <span className="block text-sm sm:text-base font-extrabold text-[#0F303F] group-hover:text-[#FF5E3A] transition-colors">
+                    <span className="block text-sm sm:text-base font-extrabold text-[#0F303F] group-hover:text-[#FD6200] transition-colors">
                       +91 98249 17250
                     </span>
                   </div>
@@ -97,7 +97,7 @@ export function IndustrialOverview() {
             </Reveal>
           </div>
 
-          {/* Right Column: AeroLogix Overlapping Double-Image Layout */}
+          {/* Right Column: Overlapping Double-Image Layout */}
           <div className="lg:col-span-6 xl:col-span-6">
             <Reveal delay={0.15}>
               <div className="relative pt-6 sm:pt-8 pr-4 sm:pr-8">
@@ -127,7 +127,7 @@ export function IndustrialOverview() {
 
                 {/* Floating Stat Card: 22+ Years Of Experience */}
                 <div className="absolute top-12 -left-4 sm:-left-8 z-20 bg-white rounded-xl p-5 shadow-2xl border border-slate-100 max-w-[210px]">
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#FF5E3A] leading-none mb-1">
+                  <div className="text-3xl sm:text-4xl font-extrabold text-[#FD6200] leading-none mb-1">
                     22+
                   </div>
                   <div className="text-xs font-bold uppercase tracking-wider text-[#0F303F] leading-snug">

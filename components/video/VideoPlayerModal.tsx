@@ -99,19 +99,19 @@ export function VideoPlayerModal({
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.94, opacity: 0, y: 12 }}
             transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-[#0A1D33] border border-[#e52229]/40 shadow-2xl z-10 my-auto flex flex-col max-h-[94vh]"
+            className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-[#0A1D33] border border-[#FD6200]/40 shadow-2xl z-10 my-auto flex flex-col max-h-[94vh]"
           >
             {/* Header: Clean & Simple */}
             <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 bg-[#06121E] border-b border-white/10 text-white shrink-0">
               <div className="flex items-center gap-2.5 min-w-0 pr-2">
-                <span className="grid h-7 w-7 shrink-0 place-items-center rounded bg-[#e52229]/20 text-[#e52229]">
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded bg-[#FD6200]/20 text-[#FD6200]">
                   <Film size={15} />
                 </span>
                 <div className="min-w-0">
                   <h3 className="font-display text-sm sm:text-base font-bold text-white flex items-center gap-2 truncate">
                     <span>Jagdamba Profile</span>
-                    <span className="text-[#e52229] font-normal">&bull;</span>
-                    <span className="text-red-400 font-medium truncate">{activeVideo.title}</span>
+                    <span className="text-[#FD6200] font-normal">&bull;</span>
+                    <span className="text-[#FD6200] font-medium truncate">{activeVideo.title}</span>
                   </h3>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export function VideoPlayerModal({
                   <button
                     type="button"
                     onClick={() => setSelectedId("full-combined-tour")}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-[#e52229]/20 hover:bg-[#e52229] text-red-400 hover:text-white px-3 py-1 text-xs font-bold transition-all border border-[#e52229]/40 cursor-pointer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-[#FD6200]/20 hover:bg-[#FD6200] text-orange-400 hover:text-white px-3 py-1 text-xs font-bold transition-all border border-[#FD6200]/40 cursor-pointer"
                   >
                     <Play size={11} fill="currentColor" />
                     <span>Watch Corporate Film</span>
@@ -158,8 +158,8 @@ export function VideoPlayerModal({
 
                 {/* On-Screen Screen Text Banner */}
                 <div className="absolute top-3 left-3 pointer-events-none z-20 max-w-[85%]">
-                  <div className="inline-flex items-center gap-2 bg-[#0A1D33]/90 backdrop-blur-md border border-[#e52229]/80 px-3 py-1 rounded shadow-lg">
-                    <span className="h-2 w-2 rounded-full bg-[#e52229] animate-ping shrink-0" />
+                  <div className="inline-flex items-center gap-2 bg-[#0A1D33]/90 backdrop-blur-md border border-[#FD6200]/80 px-3 py-1 rounded shadow-lg">
+                    <span className="h-2 w-2 rounded-full bg-[#FD6200] animate-ping shrink-0" />
                     <span className="font-display text-xs sm:text-[13px] font-black tracking-wide text-white uppercase truncate">
                       {activeVideo.screenText}
                     </span>
@@ -168,13 +168,13 @@ export function VideoPlayerModal({
               </div>
 
               {/* Subtitles Strip Below Video */}
-              <div className="mt-3.5 rounded-xl border border-[#e52229]/30 bg-[#06121E]/95 p-3 sm:p-3.5 shadow-inner">
+              <div className="mt-3.5 rounded-xl border border-[#FD6200]/30 bg-[#06121E]/95 p-3 sm:p-3.5 shadow-inner">
                 <div className="flex items-center justify-between gap-2 mb-1">
-                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-red-400 uppercase tracking-wider">
-                    <Subtitles size={13} className="text-[#e52229]" />
+                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-[#FD6200] uppercase tracking-wider">
+                    <Subtitles size={13} className="text-[#FD6200]" />
                     <span>Subtitles ({languageLabel})</span>
                   </div>
-                  <span className="text-[10px] font-mono text-[#e52229] bg-[#e52229]/10 px-1.5 py-0.5 rounded border border-[#e52229]/20">
+                  <span className="text-[10px] font-mono text-[#FD6200] bg-[#FD6200]/10 px-1.5 py-0.5 rounded border border-[#FD6200]/20">
                     LIVE CC
                   </span>
                 </div>
@@ -188,7 +188,7 @@ export function VideoPlayerModal({
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   {/* Audio Language Label */}
                   <div className="flex items-center gap-2">
-                    <Volume2 size={16} className="text-[#e52229]" />
+                    <Volume2 size={16} className="text-[#FD6200]" />
                     <span className="text-xs font-bold uppercase tracking-wider text-white">
                       Audio Language
                     </span>
@@ -201,7 +201,7 @@ export function VideoPlayerModal({
                       onClick={() => setLanguage("en")}
                       className={`px-3 py-1.5 rounded font-bold transition-all cursor-pointer ${
                         language === "en"
-                          ? "bg-[#e52229] text-white shadow-sm"
+                          ? "bg-[#FD6200] text-white shadow-sm"
                           : "text-slate-400 hover:text-white"
                       }`}
                     >
@@ -212,7 +212,7 @@ export function VideoPlayerModal({
                       onClick={() => setLanguage("gu")}
                       className={`px-3 py-1.5 rounded font-bold transition-all cursor-pointer ${
                         language === "gu"
-                          ? "bg-[#e52229] text-white shadow-sm"
+                          ? "bg-[#FD6200] text-white shadow-sm"
                           : "text-slate-400 hover:text-white"
                       }`}
                     >
@@ -223,7 +223,7 @@ export function VideoPlayerModal({
                       onClick={() => setLanguage("hi")}
                       className={`px-3 py-1.5 rounded font-bold transition-all cursor-pointer ${
                         language === "hi"
-                          ? "bg-[#e52229] text-white shadow-sm"
+                          ? "bg-[#FD6200] text-white shadow-sm"
                           : "text-slate-400 hover:text-white"
                       }`}
                     >

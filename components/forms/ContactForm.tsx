@@ -68,7 +68,9 @@ export function ContactForm() {
             "Send Message"
           )}
         </Button>
-        <span className="text-xs text-ink-subtle">Frontend demo — connect to a backend to send real messages.</span>
+        <span className="text-xs text-slate-500">
+          Direct inquiry to Jagdamba Profile Pvt. Ltd. sales office, Makarpura GIDC, Vadodara.
+        </span>
       </div>
     </form>
   );

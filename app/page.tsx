@@ -4,6 +4,7 @@ import { IndustrialOverview } from "@/components/sections/home/IndustrialOvervie
 import { ThreeFeatureColumns } from "@/components/sections/home/ThreeFeatureColumns";
 import { IndustrialCompetence } from "@/components/sections/home/IndustrialCompetence";
 import { ProcessingDivisions } from "@/components/sections/home/ProcessingDivisions";
+import { OurResources } from "@/components/sections/home/OurResources";
 import { IndustrialCTA } from "@/components/sections/home/IndustrialCTA";
 
 export default function HomePage() {
@@ -27,7 +28,10 @@ export default function HomePage() {
       {/* 6. Section 3 (AeroLogix): 4 Specialized Processing Divisions with Dark Petrol Navy Caption Bars */}
       <ProcessingDivisions />
 
-      {/* 7. AeroLogix Industrial Inquiry & Drawing Quote CTA Banner */}
+      {/* 7. Steel From Leading Mills: Our Resources Partner Logos */}
+      <OurResources />
+
+      {/* 8. AeroLogix Industrial Inquiry & Drawing Quote CTA Banner */}
       <IndustrialCTA />
     </>
   );

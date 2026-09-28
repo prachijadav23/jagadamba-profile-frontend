@@ -76,7 +76,7 @@ export function StockToDelivery() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e52229] mb-2.5">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FD6200] mb-2.5">
               <span className="font-mono text-sm tracking-tight font-black">{"//"}</span>
               <span>OUR PROCESS</span>
             </div>
@@ -90,7 +90,7 @@ export function StockToDelivery() {
 
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#e52229] hover:underline"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#FD6200] hover:underline"
           >
             <span>Processing Details</span>
             <ArrowRight size={14} />
@@ -105,7 +105,7 @@ export function StockToDelivery() {
             <div className="hidden lg:block relative mb-8">
               <div className="absolute left-0 right-0 top-4 h-[2px] bg-slate-200" />
               <div
-                className="absolute left-0 top-4 h-[2px] bg-[#e52229] transition-all duration-300"
+                className="absolute left-0 top-4 h-[2px] bg-[#FD6200] transition-all duration-300"
                 style={{ width: `${((activeStep + 1) / steps.length) * 100}%` }}
               />
 
@@ -122,7 +122,7 @@ export function StockToDelivery() {
                       <span
                         className={`absolute top-0 font-display text-xs font-black transition-colors ${
                           isActive
-                            ? "text-[#e52229] scale-110"
+                            ? "text-[#FD6200] scale-110"
                             : "text-slate-400 group-hover:text-slate-700"
                         }`}
                       >
@@ -130,7 +130,7 @@ export function StockToDelivery() {
                       </span>
                       <p
                         className={`text-[11px] font-bold uppercase tracking-wider transition-colors ${
-                          isActive ? "text-[#e52229]" : "text-slate-500 group-hover:text-[#0F172A]"
+                          isActive ? "text-[#FD6200]" : "text-slate-500 group-hover:text-[#0F172A]"
                         }`}
                       >
                         {item.short}
@@ -152,20 +152,20 @@ export function StockToDelivery() {
                     onClick={() => setActiveStep(index)}
                     className={`text-left p-3.5 rounded-xl border transition-all cursor-pointer ${
                       isActive
-                        ? "bg-red-50/70 border-[#e52229] shadow-xs"
+                        ? "bg-orange-50/70 border-[#FD6200] shadow-xs"
                         : "bg-slate-50/80 border-slate-200/90 hover:border-slate-300 hover:bg-white"
                     }`}
                   >
                     <span
                       className={`font-mono text-xs font-black ${
-                        isActive ? "text-[#e52229]" : "text-slate-400"
+                        isActive ? "text-[#FD6200]" : "text-slate-400"
                       }`}
                     >
                       {item.step}
                     </span>
                     <h3
                       className={`mt-1 font-display text-xs sm:text-[13px] font-bold leading-snug line-clamp-1 ${
-                        isActive ? "text-[#e52229]" : "text-[#0F172A]"
+                        isActive ? "text-[#FD6200]" : "text-[#0F172A]"
                       }`}
                     >
                       {item.title}
@@ -178,7 +178,7 @@ export function StockToDelivery() {
             {/* Current Active Step Highlight Box */}
             <div className="mt-5 p-5 rounded-2xl bg-slate-50 border border-slate-200">
               <div className="flex items-center gap-2">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#e52229] text-white text-xs font-bold">
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#FD6200] text-white text-xs font-bold">
                   {current.step}
                 </span>
                 <h4 className="font-display text-base font-extrabold uppercase text-[#0F172A]">
@@ -214,7 +214,7 @@ export function StockToDelivery() {
 
                   {/* Caption badge */}
                   <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xs">
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-[#e52229]">
+                    <p className="text-[10px] font-bold uppercase tracking-wider text-[#FD6200]">
                       Stage {current.step} of 08
                     </p>
                     <p className="text-xs font-bold text-[#0F172A] truncate">
